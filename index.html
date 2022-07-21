@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Kanban</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./scripts/index.js" defer></script>
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>Mini Kanban</h1>
+      <button data-save>salvar lista</button>
+    </header>
+    <main>
+      <div>
+        <h2>À FAZER</h2>
+        <div class="column" data-column="0">
+          <div id="input">
+            <input data-input type="text" placeholder="Criar tarefa" />
+            <button data-add-btn id="add-task">+</button>
+          </div>
+          <!-- <div class="card">
+            <span class="delete-btn">X</span>
+            <span>fazer o kanban</span>
+            <button class="previous-btn">&lt</button>
+            <button class="next-btn">&gt</button>
+          </div> -->
+        </div>
+      </div>
+      <div>
+        <h2>FAZENDO</h2>
+        <div class="column" data-column="1"></div>
+      </div>
+      <div>
+        <h2>FEITO</h2>
+        <div class="column" data-column="2"></div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

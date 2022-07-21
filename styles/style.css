@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(50, 200, 255, 0.2) */
+  /* border: 1px solid red; */
+  font-family: "Poppins", "Courier New";
+}
+
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+main > div {
+  width: 210px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.column {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+  width: 100%;
+  min-height: 100%;
+}
+
+.column > * {
+  padding: 10px;
+}
+
+#input {
+  background-color: rgba(167, 167, 167, 0.75);
+  display: flex;
+  justify-content: space-between;
+}
+
+#input > input {
+  width: 165px;
+}
+
+#add-task {
+  width: 19px;
+}
+
+.card {
+  background-color: rgba(150, 255, 180, 0.5);
+  margin: 15px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.delete-btn {
+  background-color: rgb(222, 57, 20);
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+.previous-btn,
+.next-btn {
+  position: absolute;
+  outline: none;
+  border-width: 0;
+  border-radius: 4px;
+  width: 18px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.previous-btn {
+  bottom: -7px;
+  left: -8px;
+}
+
+.next-btn {
+  bottom: -7px;
+  right: -8px;
+}
+
+.hidden {
+  display: none;
+}
+
+
